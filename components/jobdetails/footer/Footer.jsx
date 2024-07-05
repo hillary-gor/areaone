@@ -1,4 +1,4 @@
-import { View, Text, Pressable, Image, Linking } from "react-native";
+import { View, Text, TouchableOpacity, Image, Linking } from "react-native";
 
 import styles from "./footer.style";
 import { icons } from "../../../constants";
@@ -6,20 +6,20 @@ import { icons } from "../../../constants";
 const Footer = ({ url }) => {
   return (
     <View style={styles.container}>
-      <Pressable style={styles.likeBtn}>
+      <TouchableOpacity style={styles.likeBtn}>
         <Image
           source={icons.heartOutline}
           resizeMode='contain'
           style={styles.likeBtnImage}
         />
-      </Pressable>
+      </TouchableOpacity>
 
-      <Pressable
+      <TouchableOpacity
         style={styles.applyBtn}
         onPress={() => Linking.openURL(url)}
       >
         <Text style={styles.applyBtnText}>Apply for job</Text>
-      </Pressable>
+      </TouchableOpacity>
     </View>
   );
 };

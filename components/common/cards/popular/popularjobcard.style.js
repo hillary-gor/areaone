@@ -9,8 +9,8 @@ const styles = StyleSheet.create({
     backgroundColor: selectedJob === item.job_id ? COLORS.primary : "#FFF",
     borderRadius: SIZES.medium,
     justifyContent: "space-between",
-    boxShadow: SHADOWS.medium.boxShadow,
-    // shadowColor: COLORS.white,
+    ...SHADOWS.medium,
+    shadowColor: COLORS.white,
   }),
   logoContainer: (selectedJob, item) => ({
     width: 50,
