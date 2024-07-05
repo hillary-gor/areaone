@@ -11,8 +11,8 @@ const styles = StyleSheet.create({
     padding: SIZES.medium,
     borderRadius: SIZES.small,
     backgroundColor: "#FFF",
-    ...SHADOWS.medium,
-    shadowColor: COLORS.white,
+    boxShadow: SHADOWS.medium.boxShadow,
+    // shadowColor: COLORS.white,
   },
   logoContainer: {
     width: 50,
